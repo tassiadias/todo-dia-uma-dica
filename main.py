@@ -5,8 +5,8 @@ from twilio.rest import Client
 # Carrega variáveis de ambiente
 TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM")  # Ex: whatsapp:+14155238886
-DESTINATION_NUMBER = os.getenv("DESTINATION_NUMBER")      # Ex: whatsapp:+55XXXXXXXXXXX
+TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM") 
+DESTINATION_NUMBER = os.getenv("DESTINATION_NUMBER")      
 
 # Lê dicas e histórico
 with open("dicas.txt", "r", encoding="utf-8") as f:
@@ -30,8 +30,8 @@ dica_escolhida = random.choice(dicas_disponiveis)
 # Envia mensagem via Twilio
 client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 message = client.messages.create(
-    from_=TWILIO_WHATSAPP_FROM,
-    to=DESTINATION_NUMBER,
+    from_="whatsapp:" + os.getenv("TWILIO_WHATSAPP_FROM"),
+    to="whatsapp:" + os.getenv("DESTINATION_NUMBER"),
     body=f"📊 Dica do dia:\n{dica_escolhida}"
 )
 
