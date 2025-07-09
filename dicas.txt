@@ -1,3 +1,79 @@
-dica 1
-dica 2
-dica 3
+Combine gráficos e segmentações com tabelas dinâmicas para dashboards.
+O recurso Explorar (Sheets) sugere fórmulas automaticamente. [Somente Google Sheets]
+Salve versões antigas da planilha como backup.
+=CONT.SE(A1:A10; ">10") conta valores maiores que 10. (Função CONT.SE / COUNTIF)
+=REDUZIR(array; 0; LAMBDA(a;b;a+b)) soma elementos de uma matriz. (Função REDUZIR / REDUCE)
+Use estilos condicionais para destacar dados automaticamente.
+Ctrl + Page Up / Page Down alterna entre planilhas.
+Ctrl + barra de espaço seleciona a coluna inteira.
+Aplique a validação de dados para criar listas suspensas.
+=TEXTO(A1; "dd/mm/aaaa") formata datas como texto. (Função TEXTO / TEXT)
+Use a fórmula =HOJE() para inserir a data atual automaticamente.
+=FILTRO(tabela; condição) retorna apenas linhas que atendem à condição. (Função FILTRO / FILTER)
+=CORRESP(valor; intervalo; 0) retorna a posição de um valor. (Função CORRESP / MATCH)
+=ÚNICO(intervalo) retorna valores únicos. (Função ÚNICO / UNIQUE)
+Ctrl + seta para navegar rapidamente em grandes planilhas.
+=PROCV(valor; tabela; coluna; FALSO) busca valores verticalmente. (Função PROCV / VLOOKUP)
+Utilize comentários em células para dar contexto aos dados.
+Google Sheets permite importar dados com IMPORTHTML, IMPORTXML e IMPORTDATA. [Somente Google Sheets]
+Use colunas auxiliares para cálculos intermediários.
+=CLASSIFICAR(tabela; coluna; ordem) ordena dados. (Função CLASSIFICAR / SORT)
+Você pode congelar a primeira linha da planilha para facilitar a leitura: “Exibir > Congelar > 1 linha”.
+=TRANSPOSTA(intervalo) inverte linhas e colunas. (Função TRANSPOSTA / TRANSPOSE)
+Use Ctrl + ; para inserir a data atual.
+Use Alt + = para inserir soma automática.
+=SE(A1>10; "Alto"; "Baixo") cria lógica condicional. (Função SE / IF)
+=ORDENARPOR(tabela; intervalo_ordenacao) ordena com base em outra coluna. (Função ORDENARPOR / SORTBY)
+=SEQUÊNCIA(5; 1; 1; 1) gera uma lista de 5 números sequenciais. (Função SEQUÊNCIA / SEQUENCE)
+Pressione F2 para editar o conteúdo de uma célula.
+=LET(nome; valor; cálculo) define variáveis internas para clareza. (Função LET / LET)
+=ÍNDICE(tabela; linha; coluna) retorna valor em uma posição específica. (Função ÍNDICE / INDEX)
+=ARRED(A1; 2) arredonda para 2 casas decimais. (Função ARRED / ROUND)
+Evite mesclar células — dificulta o uso de fórmulas.
+Você pode usar VALOR() para converter texto em número.
+Ctrl + T para transformar uma seleção em tabela.
+=E(A1>0;B1<5) retorna VERDADEIRO se ambas condições forem verdadeiras. (Função E / AND)
+=OU(A1>0;B1<5) retorna VERDADEIRO se uma das condições for verdadeira. (Função OU / OR)
+Use o painel de nomeação para gerenciar intervalos nomeados.
+=NÚM.CARACT(A1) conta quantos caracteres tem na célula. (Função NÚM.CARACT / LEN)
+Google Sheets tem suporte a macros com App Script. [Somente Google Sheets]
+=MAP(array; LAMBDA(x; x*2)) aplica função a cada elemento. (Função MAP / MAP)
+=MÉDIA(A1:A10) retorna a média dos valores. (Função MÉDIA / AVERAGE)
+=SEERRO(fórmula; "Erro") evita exibir mensagens de erro. (Função SEERRO / IFERROR)
+Crie gráficos dinâmicos vinculados a tabelas para visualizações rápidas.
+=SOMA(A1:A10) soma os valores do intervalo. (Função SOMA / SUM)
+=FILTRO(tabela; condição) retorna subconjuntos com base em filtros. (Função FILTRO / FILTER)
+=DESLOC(ref; linhas; colunas) retorna célula deslocada. (Função DESLOC / OFFSET)
+Use a função TABELA DINÂMICA para análises rápidas.
+Use o recurso “Formatar como tabela” para ganhar filtros, cores e fórmulas automáticas.
+=CONT.VALORES(A1:A10) conta células não vazias. (Função CONT.VALORES / COUNTA)
+Ctrl + Shift + L para aplicar/remover filtros.
+Mantenha uma aba só para dados brutos e outra para análise.
+=MÁXIMO(A1:A10) mostra o maior valor. (Função MÁXIMO / MAX)
+=REGEXEXTRACT(texto; padrão) permite extrair partes de texto. [Somente Google Sheets]
+=IMPORTXML(url; xpath) extrai dados de páginas HTML. [Somente Google Sheets]
+=IMPORTHTML(url; "table", 1) importa tabelas da web. [Somente Google Sheets]
+=REGEXMATCH(texto; padrão) retorna VERDADEIRO se o padrão for encontrado. [Somente Google Sheets]
+=REGEXREPLACE(texto; padrão; substituição) troca partes do texto. [Somente Google Sheets]
+=FILTRAR(tabela; condição) retorna linhas filtradas. (Função FILTRAR / FILTER)
+=MIN(A1:A10) mostra o menor valor. (Função MÍNIMO / MIN)
+=TEXT(A1; "dd/mm/yyyy") formata datas (equivalente no Excel e Sheets). (Função TEXTO / TEXT)
+Ctrl + 1 abre a janela de formatação de células.
+Use gráficos de barras empilhadas para comparações entre categorias.
+=CONCAT(A1; " "; B1) junta conteúdos de duas células. (Função CONCAT / CONCAT)
+=UNIQUE(A1:A10) retorna valores únicos do intervalo. (Função ÚNICO / UNIQUE)
+Utilize proteção de intervalo para evitar edições acidentais.
+=SOMASE(A1:A10; ">10"; B1:B10) soma valores com critério. (Função SOMASE / SUMIF)
+=XLOOKUP(valor; busca; retorno) versão moderna do PROCV. (Função XLOOKUP / XLOOKUP)
+=SOMARPRODUTO((A1:A10>0)*(B1:B10<100)) soma com múltiplas condições. (Função SOMARPRODUTO / SUMPRODUCT)
+=IMPORTDATA("url") importa dados CSV ou TSV. [Somente Google Sheets]
+Com filtros avançados, você pode analisar grandes volumes sem perder performance.
+=SUBSTITUIR(texto; início; núm_chars; novo_texto) troca parte do conteúdo.
+=MODO(A1:A10) retorna o valor que mais se repete. (Função MODO / MODE)
+=CONCATENAR(A1; " "; B1) une conteúdos (mais usado em versões antigas). (Função CONCATENAR / CONCATENATE)
+=ARREDONDAR(A1; 0) arredonda número (variação de ROUND). (Função ARREDONDAR / ROUND)
+=EXT.TEXTO(A1; 3; 2) retorna caracteres a partir da posição. (Função EXT.TEXTO / MID)
+Você pode conectar o Google Sheets com o Google Data Studio para relatórios avançados. [Somente Google Sheets]
+=MAIOR(A1:A10; 2) retorna o 2º maior valor. (Função MAIOR / LARGE)
+=MENOR(A1:A10; 2) retorna o 2º menor valor. (Função MENOR / SMALL)
+Você pode usar =AGORA() para obter data e hora atual. (Função AGORA / NOW)
